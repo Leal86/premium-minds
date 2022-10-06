@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-pg-internas.css">
+    <title>Utilizador</title>
+</head>
+
+<body>
+    <h1>Utilizador</h1>
+    <form method="get" target="_blank" action="../index.html">
+        <details>
+            <summary>Tipo de Utilizador</summary>
+
+            <div class="tipo-utilizador">
+                <div id="dados-utilizador">
+
+                    <div class="primeiro">
+                        <input type="checkbox" for="project-manager" id="project-manager">
+                        <label for="project-manager">Project manager</label>
+                    </div>
+
+                    <div class="primeiro">
+                        <input type="checkbox" for="developer" id="developer">
+                        <label for="developer">Developer</label>
+                    </div>
+
+                    <div class="primeiro">
+                        <input type="checkbox" for="architect" id="architect">
+                        <label for="architect">Architect</label>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </details>
+
+        <details class="detalhes">
+            <summary>Contato</summary>
+
+            <div class="contato">
+
+                <div class="dados-contato">
+                    <label for="email">E-mail</label>
+                    
+                    <div class="email">
+                        <input type="email" for="email" id="email" placeholder="Digite seu e-mail:" required>
+                    </div>
+
+                </div>
+
+                <div class="dados-contato">
+                    <label for="senha">Palavra-passe</label>
+                    
+                    <div class="email">
+                        <input type="password" for="email" id="senha" placeholder="Digite sua senha:" required>
+                    </div>
+
+                </div>
+                
+                <div class="dados-contato" id="phone">
+                    <label for="telefone">Telefone</label>
+                    
+                    <div class="telefone email">
+                        <input type="tel" id="telefone" name="telefone" placeholder="  +351 000000000" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required>
+                    </div>
+    
+                </div>
+
+            </div>
+            
+        </details>
+
+        <div id="container">
+            <div id="botoes">
+                <input type="reset" name="cancelar" value="Cancelar" id="btn-cancelar" class="btns">
+                <input type="submit" name="guardar" value="Guardar" id="btn-guardar" class="btns">
+            </div>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

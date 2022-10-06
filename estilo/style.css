@@ -1,0 +1,217 @@
+/* Teste */
+
+
+/* Configurações globais */
+@charset "UTF-8";
+
+:root {
+    --cor0: #FFFFFF; 
+    --cor1: #EBEBEB;
+    --cor2: #425064;
+    --cor3: #334053;
+    --cor4: #223046;
+
+    --fonte-padrao: arial,verdana, helvetica,sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-padrao);
+}
+
+header {
+  display: block;
+  width: auto;
+}
+
+header > a > img {
+  padding: 10px;
+  min-width: 5vw;
+}
+
+#container {
+  display: flex;
+  position: block;
+}
+
+#opcoes {
+  background-color: var(--cor3);
+  display: block;
+  margin: auto left;
+  width: 350px;
+  min-width: 205px;
+  
+}
+ul {
+  margin-top: 3vw;
+}
+ul > li {
+  list-style: none;
+  margin: 3vw 3vw 3vw 3vw;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: var(--cor1);
+  padding: 5px;
+  font-size: 1.1em;
+  position: relative;
+}
+
+ul > li > a::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: gold;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+
+ul > li > a:hover::after {
+  width: 97%;
+}
+
+ul > li > a:visited {
+  color: var(--cor1);
+
+}
+
+ul > li > a:active {
+  color: gold;
+}
+
+#logo-empresa > img {
+  width: 25vw;
+}
+
+#espaco {
+  margin-top: 18.4vw;
+  padding: 15px 15px;
+  background-color: var(--cor4);
+  text-align: center;
+  color: var(--cor0);
+}
+
+#espaco > span {
+  font-size: 0.75em;
+}
+
+iframe {
+  width: 1570px;
+  background-color: var(--cor0);
+  background: url('/imagens/LOGO-WDR.svg')  center no-repeat ;
+  background-size: 35vw;
+}
+
+
+#rodape {
+  background-color: rgba(36, 34, 34, 0.37);
+  text-align: center;
+  height: 50px;
+  padding: 15px;
+}
+
+#rodape > span {
+  color: white;
+  font-weight: bold;
+}
+
+#rodape > span > a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  color: blue;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Responsividade */
+
+@media screen and (min-width: 879px) and (max-width:1120px) {
+  ul > li > a {
+    text-decoration: none;
+    color: var(--cor1);
+    padding: 5px;
+    font-size: 1.1em;
+    position: relative;
+  }
+
+}
+
+
+/* sm screen */
+@media screen and (min-width: 521px) and (max-width:728px) {
+  
+}
+
+
+/* md screen */
+@media screen and (max-width: 729px) and (min-width:1200px) {
+
+}
+
+/* xlg screen */
+@media screen and (max-width: 1201px) and (min-width:1919px) {
+
+}
+
+
+/* xxlg screen */
+@media screen and (min-width: 1920px) {
+  
+  
+}
+
+/* Mudança de background para abrir a tab content
+
+$screen-xs   = 520px  // Extra small screen / phone
+$screen-sm   = 768px  // Small screen / tablet
+$screen-md   = 992px  // Medium screen / desktop
+$screen-lg     = 1200px // Large screen / wide desktop
+$screen-xlg    = 1400px // Extra Large screen / wide desktop
+$screen-xxlg   = 1600px // Extra Large screen / wide desktop
+
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: var(--cor0);
+  padding: 30px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+ Mudança de background color dos buttons on hover 
+
+.tab button:hover {
+  background-color: var(--cor4);
+}
+
+
+
+ 
+.tab button.active {
+  background-color: var(--cor4);
+}
+
+.tbcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid var(--cor1);
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+
+*/
