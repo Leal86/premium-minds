@@ -141,7 +141,7 @@ iframe {
   
   header > a > img {
     padding: 10px;
-    width: 100px;
+    width: 90px;
   }
   
   #container {
@@ -151,7 +151,7 @@ iframe {
   
   #opcoes {
     background-color: var(--cor3);
-    width: 358px;
+    width: 375px;
     display: inline-block;
   }
 
@@ -189,7 +189,7 @@ iframe {
   }
   
   iframe {
-    width: 360px;
+    width: 375px;
     height: 60vh;
     background-color: var(--cor0);
     background: rgb(255, 255, 255) url('/imagens/LOGO-WDR.svg')  center no-repeat;
