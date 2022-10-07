@@ -151,14 +151,11 @@ iframe {
   
   #opcoes {
     background-color: var(--cor3);
-    width: 375px;
+    width: 390px;
+    height: 30vh;
     display: inline-block;
   }
 
-  ul {
-    margin-top: 0vw;
-  }
-  
   ul > li {
     list-style: none;
     margin: 3vw 3vw 10vw 3vw;
@@ -177,20 +174,20 @@ iframe {
   }
   
   #espaco {
-    margin-top: 25vw;
-    padding: 15px 15px;
-    background-color: var(--cor4);
+    margin-top: 1vw;
+    background-color: var(--cor3);
     text-align: center;
-    color: var(--cor0);
+    color: transparent;
   }
   
   #espaco > span {
     font-size: 0.8em;
+    color: transparent;
   }
   
   iframe {
-    width: 375px;
-    height: 60vh;
+    width: 390px;
+    height: 50vh;
     background-color: var(--cor0);
     background: rgb(255, 255, 255) url('/imagens/LOGO-WDR.svg')  center no-repeat;
     background-size: 45vw;
@@ -203,15 +200,15 @@ iframe {
   #rodape > span {
     color: white;
     font-weight: bold;
-    font-size: 0.5em;
+    font-size: 0.7em;
   }
   
   #rodape > span > a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
-    
     font-weight: 600;
-    color: blue;
+    font-size: 1.1em;
+    color: rgb(24, 9, 238);
     cursor: pointer;
     text-decoration: none;
   }
