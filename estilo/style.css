@@ -27,6 +27,7 @@ body {
 header {
   display: block;
   width: auto;
+  border: 2px solid black;
 }
 
 header > a > img {
@@ -106,8 +107,8 @@ ul > li > a:active {
 iframe {
   width: 1570px;
   background-color: var(--cor0);
-  background: url('/imagens/LOGO-WDR.svg')  center no-repeat ;
-  background-size: 35vw;
+  background: rgb(255, 255, 255) url('/imagens/LOGO-WDR.svg')  center no-repeat;
+  background-size: 45vw;
 }
 
 
@@ -133,6 +134,89 @@ iframe {
 }
 
 /* Responsividade */
+
+
+/* sm screen */
+@media screen and (max-width:499px) {
+  
+  header > a > img {
+    padding: 10px;
+    width: 100px;
+  }
+  
+  #container {
+    display: block;
+    
+  }
+  
+  #opcoes {
+    background-color: var(--cor3);
+    width: 358px;
+    display: inline-block;
+  }
+
+  ul {
+    margin-top: 0vw;
+  }
+  
+  ul > li {
+    list-style: none;
+    margin: 3vw 3vw 10vw 3vw;
+  }
+  
+  ul > li > a {
+    text-decoration: none;
+    color: var(--cor1);
+    padding: 5px;
+    font-size: 1.1em;
+    position: relative;
+  }
+  
+  #logo-empresa > img {
+    width: 25vw;
+  }
+  
+  #espaco {
+    margin-top: 25vw;
+    padding: 15px 15px;
+    background-color: var(--cor4);
+    text-align: center;
+    color: var(--cor0);
+  }
+  
+  #espaco > span {
+    font-size: 0.8em;
+  }
+  
+  iframe {
+    width: 360px;
+    height: 60vh;
+    background-color: var(--cor0);
+    background: rgb(255, 255, 255) url('/imagens/LOGO-WDR.svg')  center no-repeat;
+    background-size: 45vw;
+  }
+  
+  #rodape {
+    width: 100%;
+  }
+  
+  #rodape > span {
+    color: white;
+    font-weight: bold;
+    font-size: 0.5em;
+  }
+  
+  #rodape > span > a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    
+    font-weight: 600;
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+}
 
 @media screen and (min-width: 879px) and (max-width:1120px) {
   ul > li > a {
