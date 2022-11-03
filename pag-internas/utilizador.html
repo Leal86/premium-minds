@@ -5,74 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-pg-internas.css">
+    <link rel="stylesheet" href="../estilo/style.css">
+    <link rel="stylesheet" href="../estilo/media-query.css">
     <title>Utilizador</title>
 </head>
 
 <body>
     <h1>Utilizador</h1>
-    <form method="get" target="_blank" action="../index.html">
+    <form method="get" target="_blank" action="../index.html" autocomplete="on">
         <details>
             <summary>Tipo de Utilizador</summary>
 
-            <div class="tipo-utilizador">
-                <div id="dados-utilizador">
+            <div id="dados-utilizador">
 
-                    <div class="primeiro">
-                        <input type="checkbox" for="project-manager" id="project-manager">
-                        <label for="project-manager">Project manager</label>
-                    </div>
-
-                    <div class="primeiro">
-                        <input type="checkbox" for="developer" id="developer">
-                        <label for="developer">Developer</label>
-                    </div>
-
-                    <div class="primeiro">
-                        <input type="checkbox" for="architect" id="architect">
-                        <label for="architect">Architect</label>
-                    </div>
-
+                <div class="primeiro">
+                    <input type="checkbox" name="project-manager" id="iproject-manager">
+                    <label for="iproject-manager">Project manager</label>
                 </div>
-            </div>
 
+                <div class="primeiro">
+                    <input type="checkbox" name="developer" id="developer">
+                    <label for="developer">Developer</label>
+                </div>
+
+                <div class="primeiro">
+                    <input type="checkbox" name="architect" id="architect">
+                    <label for="architect">Architect</label>
+                </div>
+
+            </div>
 
         </details>
 
-        <details class="detalhes">
+        <details>
             <summary>Contato</summary>
 
             <div class="contato">
 
                 <div class="dados-contato">
-                    <label for="email">E-mail</label>
-                    
+                    <label for="iemail">E-mail</label>
+
                     <div class="email">
-                        <input type="email" for="email" id="email" placeholder="Digite seu e-mail:" required>
+                        <input type="email" name="e-mail" id="iemail" placeholder=" digite seu e-mail:" required
+                            autocomplete="email">
                     </div>
 
                 </div>
 
                 <div class="dados-contato">
-                    <label for="senha">Palavra-passe</label>
-                    
+                    <label for="isenha">Palavra-passe</label>
+
                     <div class="email">
-                        <input type="password" for="email" id="senha" placeholder="Digite sua senha:" required>
+                        <input type="password" name="senha" id="isenha" placeholder=" digite sua senha:" required
+                            maxlength="20" minlength="8">
                     </div>
 
                 </div>
-                
+
                 <div class="dados-contato" id="phone">
-                    <label for="telefone">Telefone</label>
-                    
+                    <label for="itelefone">Telefone</label>
+
                     <div class="telefone email">
-                        <input type="tel" id="telefone" name="telefone" placeholder="  +351 000000000" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required>
+                        <input type="tel" id="itelefone" name="telefone" placeholder="  +351 000000000"
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required>
                     </div>
-    
+
                 </div>
 
             </div>
-            
+
         </details>
 
         <div id="container">

@@ -1,7 +1,5 @@
-/* Teste */
-
-
 /* Configurações globais */
+
 @charset "UTF-8";
 
 :root {
@@ -18,281 +16,294 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
 }
 
 body {
-  font-family: var(--fonte-padrao);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
 }
 
 header {
-  display: block;
-  width: auto;
-  border: 2px solid black;
+  background-color: white;
+  height: auto;
+  text-align: center;
+  margin-bottom: 1px;
 }
 
 header > a > img {
-  padding: 10px;
-  min-width: 5vw;
-}
-
-#container {
-  display: flex;
-  position: block;
-}
-
-#opcoes {
-  background-color: var(--cor3);
-  display: block;
-  margin: auto left;
-  width: 350px;
-  min-width: 205px;
-  
-}
-ul {
-  margin-top: 3vw;
-}
-ul > li {
-  list-style: none;
-  margin: 3vw 3vw 3vw 3vw;
-}
-
-ul > li > a {
-  text-decoration: none;
-  color: var(--cor1);
-  padding: 5px;
-  font-size: 1.1em;
-  position: relative;
-}
-
-ul > li > a::after {
-  content: " ";
-  width: 0%;
-  height: 2px;
-  background-color: gold;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: 0.3s ease-in-out;
-}
-
-ul > li > a:hover::after {
-  width: 97%;
-}
-
-ul > li > a:visited {
-  color: var(--cor1);
-
-}
-
-ul > li > a:active {
-  color: gold;
-}
-
-#logo-empresa > img {
-  width: 25vw;
-}
-
-#espaco {
-  margin-top: 18.4vw;
-  padding: 15px 15px;
-  background-color: var(--cor4);
-  text-align: center;
-  color: var(--cor0);
-}
-
-#espaco > span {
-  font-size: 0.75em;
-}
-
-iframe {
-  width: 1570px;
-  background-color: var(--cor0);
- 
-  background-size: 45vw;
-}
-
-
-#rodape {
-  background-color: rgba(36, 34, 34, 0.37);
-  text-align: center;
-  height: 50px;
+  width: 170px;
   padding: 15px;
 }
 
-#rodape > span {
+header > i#burguer {
+  background-color: var(--cor4);
   color: white;
+  display: block;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+header > i#burguer:hover {
+  background-color: var(--cor2);
+  color: aqua;
+}
+
+menu {
+  display: none;
+}
+
+
+menu > ul {
+  list-style-type: none;
+}
+
+menu > ul > li > a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--cor3);
+  color: var(--cor1);
+  border-top: 2px solid var(--cor1);
+}
+
+menu > ul > li > a:hover {
+  color: gold;
+}
+
+h1 {
+  padding: 15px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1em;
+  text-align: justify;
+  margin: 0px 35px;
+  text-indent: 25px;
+  margin-bottom: 10px;
+}
+
+section {
+  
+}
+
+section, iframe {
+  height: 75.1vh;
+  width: 100%;
+}
+
+iframe {
+  
+}
+
+details {
+  display: block;
+  width: 100vw;
+}
+
+details[open] summary::after {
+  content: "-";
+
+}
+
+summary {
+  display: flex;
+  background: rgb(219, 219, 219);
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto 0px 0px auto;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: "+";
+  font-size: 1.3em;
+  font-weight: 500;
+  margin: auto 0px 0px auto;
+  padding: 4px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+label {
+  margin-left: 5px;
+  font-size: 1.1em;
+}
+
+input {
+  margin: 10px 2px 10px 25px;
+  width: 25px;
+  height: 25px;
+  box-shadow: 1px 1px 2px 1px rgb(202, 195, 195);
+  outline: none;
+  cursor: pointer;
+}
+
+input:focus {
+  background-color: rgb(255, 246, 246);
+  font-size: 1.2em;
+}
+
+::placeholder {
+  color: #003bfc50;
+  font-size: 0.9em;
   font-weight: bold;
 }
 
-#rodape > span > a {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: italic;
-  font-weight: 600;
-  color: blue;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-/* Responsividade */
-
-
-/* sm screen */
-@media screen and (max-width:499px) {
-  
-  header > a > img {
-    padding: 10px;
-    width: 90px;
-  }
-  
-  #container {
-    display: block;
-    
-  }
-  
-  #opcoes {
-    background-color: var(--cor3);
-    width: 390px;
-    height: 30vh;
-    display: inline-block;
-  }
-
-  ul > li {
-    list-style: none;
-    margin: 3vw 3vw 10vw 3vw;
-  }
-  
-  ul > li > a {
-    text-decoration: none;
-    color: var(--cor1);
-    padding: 5px;
-    font-size: 1.1em;
-    position: relative;
-  }
-  
-  #logo-empresa > img {
-    width: 25vw;
-  }
-  
-  #espaco {
-    margin-top: 1vw;
-    background-color: var(--cor3);
-    text-align: center;
-    color: transparent;
-  }
-  
-  #espaco > span {
-    font-size: 0.8em;
-    color: transparent;
-  }
-  
-  iframe {
-    width: 390px;
-    height: 50vh;
-    background-color: var(--cor0);
-    background: rgb(255, 255, 255) url('/imagens/LOGO-WDR.svg')  center no-repeat;
-    background-size: 45vw;
-  }
-  
-  #rodape {
-    width: 100%;
-  }
-  
-  #rodape > span {
-    color: white;
-    font-weight: bold;
-    font-size: 0.7em;
-  }
-  
-  #rodape > span > a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-    font-weight: 600;
-    font-size: 1.1em;
-    color: rgb(24, 9, 238);
-    cursor: pointer;
-    text-decoration: none;
-  }
-
-}
-
-@media screen and (min-width: 879px) and (max-width:1120px) {
-  ul > li > a {
-    text-decoration: none;
-    color: var(--cor1);
-    padding: 5px;
-    font-size: 1.1em;
-    position: relative;
-  }
-
-}
-
-
-/* sm screen */
-@media screen and (min-width: 521px) and (max-width:728px) {
-  
-}
-
-
-/* md screen */
-@media screen and (max-width: 729px) and (min-width:1200px) {
-
-}
-
-/* xlg screen */
-@media screen and (max-width: 1201px) and (min-width:1919px) {
-
-}
-
-
-/* xxlg screen */
-@media screen and (min-width: 1920px) {
-  
-  
-}
-
-/* Mudança de background para abrir a tab content
-
-$screen-xs   = 520px  // Extra small screen / phone
-$screen-sm   = 768px  // Small screen / tablet
-$screen-md   = 992px  // Medium screen / desktop
-$screen-lg     = 1200px // Large screen / wide desktop
-$screen-xlg    = 1400px // Extra Large screen / wide desktop
-$screen-xxlg   = 1600px // Extra Large screen / wide desktop
-
-
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: var(--cor0);
-  padding: 30px 16px;
+#dados-utilizador {
   width: 100%;
+  display: block;
+  align-items: center;
+  padding-bottom: 15px;
+  background-color: rgba(240, 239, 239, 0.192);
+}
+
+#dados-utilizador > .primeiro {
+  margin-top: 15px;
+}
+
+.contato {
+  width: 100vw;
+  height: auto;
+  padding-bottom: 5px;
+  background: rgba(240, 239, 239, 0.192);
+  display: block;
+}
+
+.contato>input {
+  display: block;
+
+}
+
+.dados-contato {
+  align-items: center;
+  margin: 25px 20px 15px 20px;
+  display: inline-block;
+}
+
+.email > input {
+  width: 80vw;
+  background-color: rgba(255, 255, 255, 0.904);
   border: none;
-  outline: none;
-  text-align: left;
+  box-shadow: 0px 2px 0px 0px rgba(202, 195, 195, 0.356);
+  margin-left: 5px;
+}
+
+#phone {
+  display: block;
+}
+
+.btns {
+  width: 220px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+#botoes {
+  text-align: center;
+}
+
+#btn-cancelar {
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid rgba(128, 128, 128, 0.356);
+  background-color: #ffffff;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+#btn-cancelar:hover {
+  border-radius: 10px 10px 10px 10px;
+  background-image: linear-gradient(to bottom, #f51b1b, red);
+  color: #ffffff;
+}
+
+#btn-cancelar:active {
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid rgba(128, 128, 128, 0.356);
+  background-color: #ff0101;
+  background-image: linear-gradient(to bottom, red, #b33f3f);
+  font-weight: bold;
+}
+
+#btn-guardar {
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid rgba(128, 128, 128, 0.356);
+  background-color: #0084ff;
+  color: #ffffff;
+  font-weight: bold;
+  margin: auto;
+  
+}
+
+#btn-guardar:hover {
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid rgba(128, 128, 128, 0.356);
+  background-image: linear-gradient(to bottom, #0084ffe0, blue);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#btn-guardar:active {
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid rgba(128, 128, 128, 0.356);
+  background-color: #0084ffe0;
+  background-image: linear-gradient(to bottom, blue, #0084ffe0);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#m-tremer {
+  display: block;
+}
+
+#m-tremer-img {
+  width: 80vw;
+  margin: 0px 5px 15px 42px;
+  border-radius: 25px;
+  box-shadow: 2px 0px 3px 1px rgba(172, 146, 146, 0.322);
+}
+
+#descricao-mtremer {
+  width: 100vw;
+}
+
+footer {
+  background-color: black;
+  padding: 5px;
+}
+
+footer > p {
+  color: goldenrod;
+  font-size: 0.7em;
+  text-align: center;
+  margin: 0px;
+  padding: 25px 0px;
+}
+
+footer > p > a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
   cursor: pointer;
-  transition: 0.3s;
 }
 
- Mudança de background color dos buttons on hover 
-
-.tab button:hover {
-  background-color: var(--cor4);
+footer > p > a:hover {
+  color: aqua;
 }
 
 
 
- 
-.tab button.active {
-  background-color: var(--cor4);
-}
-
-.tbcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid var(--cor1);
-  width: 70%;
-  border-left: none;
-  height: 300px;
-}
-
-*/
