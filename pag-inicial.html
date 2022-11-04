@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
+    <!-- Site de ícones do google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Premium Minds</title>
+</head>
+
+<body onresize="mudouTamanho()">
+    <header>
+       
+        <a href="pag-inicial.html">
+            <img src="imagens/LOGO-WDR.png" alt="Logotipo WEBDEV">
+        </a>
+       
+
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu ads_click</i>
+
+        <menu id="itens">
+            <ul>
+                <li>
+                    <a href="pag-internas/lorem.html" target="frame">Lorem Ipsum</a>
+                </li>
+                <li>
+                    <a href="pag-internas/utilizador.html" target="frame">Utilizador</a>
+                </li>
+                <li>
+                    <a href="pag-internas/q-solum.html" target="frame">Quantum Solum</a>
+                </li>
+                <li>
+                    <a href="pag-internas/m-tremer.html" target="frame">Marcus Tremer</a>
+                </li>
+                <li class="empresa">
+                    <a href="https://premium-minds.com/" id="espaco" target="_blank">2019 &reg; Premium-minds.com</a>
+                </li>
+            </ul>
+
+        </menu>
+
+    </header>
+
+    <main>
+        <section id="conteudo">
+            <iframe src="" name="frame" frameborder="0">
+                <p>Esse navegador não é compatível com essa funcionalidade! :-(</p>
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+
+        <p>
+            Desenvolvido por <a href="https://www.linkedin.com/in/alexsanderleal86/" target="_blank">Alexsander Leal</a> para fins acadêmicos
+        </p>
+
+    </footer>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none';
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+
+</html>

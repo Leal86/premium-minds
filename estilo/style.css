@@ -35,6 +35,33 @@ header {
   margin-bottom: 1px;
 }
 
+/* Página Inicial */
+
+body#pg-inicial {
+  width: 100vw;
+  height: 100vh;
+  background-color: #EBEBEB;
+}
+
+h1#pag-inicial {
+  padding: 35px;
+  background-color: var(--cor4);
+  color: white;
+}
+
+div#logo-inicial {
+  text-align: center;
+}
+
+div#logo-inicial > img {
+  width: 270px;
+  margin: 130px 0px 150px 0px;
+}
+
+
+
+/* Página index */
+
 header > a > img {
   width: 170px;
   padding: 15px;
@@ -145,7 +172,7 @@ label {
 }
 
 input {
-  margin: 10px 2px 10px 25px;
+  margin: 10px 5px 20px 0px;
   width: 25px;
   height: 25px;
   box-shadow: 1px 1px 2px 1px rgb(202, 195, 195);
@@ -163,6 +190,8 @@ input:focus {
   font-size: 0.9em;
   font-weight: bold;
 }
+
+/* Página Utilizador */
 
 #dados-utilizador {
   width: 100%;
@@ -207,10 +236,39 @@ input:focus {
   display: block;
 }
 
+#div-entrar {
+  text-align: center;
+  height: 38.5vh;
+}
+
+div#div-entrar > a#link-entrar {
+  width: 150px;
+  height: 30px;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.438);
+  padding: 12px 35px;
+  background-color: var(--cor4);
+  color: var(--cor0);
+  font-size: 1.8em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#link-entrar:hover {
+  background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+  
+}
+
+a#link-entrar:active {
+  background-image: linear-gradient(to bottom, var(--cor4), var(--cor2));
+ 
+}
+
 .btns {
   width: 220px;
   height: 50px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 #botoes {
@@ -218,53 +276,45 @@ input:focus {
 }
 
 #btn-cancelar {
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   border: 1px solid rgba(128, 128, 128, 0.356);
   background-color: #ffffff;
-  font-weight: bold;
-  margin-left: auto;
+  font-size: 1.2em;
+  font-weight: bolder;
 }
 
 #btn-cancelar:hover {
-  border-radius: 10px 10px 10px 10px;
   background-image: linear-gradient(to bottom, #f51b1b, red);
   color: #ffffff;
 }
 
 #btn-cancelar:active {
-  border-radius: 10px 10px 10px 10px;
-  border: 1px solid rgba(128, 128, 128, 0.356);
   background-color: #ff0101;
   background-image: linear-gradient(to bottom, red, #b33f3f);
-  font-weight: bold;
 }
 
 #btn-guardar {
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   border: 1px solid rgba(128, 128, 128, 0.356);
   background-color: #0084ff;
   color: #ffffff;
-  font-weight: bold;
+  font-size: 1.2em;
+  font-weight: bolder;
   margin: auto;
   
 }
 
 #btn-guardar:hover {
-  border-radius: 10px 10px 10px 10px;
-  border: 1px solid rgba(128, 128, 128, 0.356);
   background-image: linear-gradient(to bottom, #0084ffe0, blue);
   color: #ffffff;
-  font-weight: bold;
 }
 
 #btn-guardar:active {
-  border-radius: 10px 10px 10px 10px;
-  border: 1px solid rgba(128, 128, 128, 0.356);
   background-color: #0084ffe0;
   background-image: linear-gradient(to bottom, blue, #0084ffe0);
-  color: #ffffff;
-  font-weight: bold;
 }
+
+/* Página Marcus Tremer */
 
 #m-tremer {
   display: block;
@@ -280,6 +330,9 @@ input:focus {
 #descricao-mtremer {
   width: 100vw;
 }
+
+
+/* Rodapé */
 
 footer {
   background-color: black;
