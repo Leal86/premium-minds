@@ -12,78 +12,73 @@
 
 <body>
     <h1>Utilizador</h1>
-    <form method="get" target="_blank" action="../index.html" autocomplete="on">
-        <details>
-            <summary>Tipo de Utilizador</summary>
+    
+        <form method="get" target="_blank" action="../index.html" autocomplete="on">
+            <details>
+                <summary>Tipo de Utilizador</summary>
+                <div id="dados-utilizador">
+                    <div class="tipo-utilizador">
 
-            <div id="dados-utilizador">
+                        <div class="primeiro">
+                            <input type="checkbox" name="project-manager" id="iproject-manager">
+                            <label for="iproject-manager">Project manager</label>
+                        </div>
+                        <div class="primeiro">
+                            <input type="checkbox" name="developer" id="developer">
+                            <label for="developer">Developer</label>
+                        </div>
+                        <div class="primeiro">
+                            <input type="checkbox" name="architect" id="architect">
+                            <label for="architect">Architect</label>
+                        </div>
 
-                <div class="primeiro">
-                    <input type="checkbox" name="project-manager" id="iproject-manager">
-                    <label for="iproject-manager">Project manager</label>
+                    </div>
                 </div>
 
-                <div class="primeiro">
-                    <input type="checkbox" name="developer" id="developer">
-                    <label for="developer">Developer</label>
-                </div>
+            </details>
 
-                <div class="primeiro">
-                    <input type="checkbox" name="architect" id="architect">
-                    <label for="architect">Architect</label>
-                </div>
+            <details>
+                <summary>Contato</summary>
 
-            </div>
+                <div class="contato">
 
-        </details>
+                    <div class="dados-contato">
+                        <label for="iemail">E-mail</label>
+                        <div class="email">
+                            <input type="email" name="e-mail" id="iemail" placeholder=" digite seu e-mail:" required
+                                autocomplete="email">
+                        </div>
+                    </div>
 
-        <details>
-            <summary>Contato</summary>
-
-            <div class="contato">
-
-                <div class="dados-contato">
-                    <label for="iemail">E-mail</label>
-
-                    <div class="email">
-                        <input type="email" name="e-mail" id="iemail" placeholder=" digite seu e-mail:" required
-                            autocomplete="email">
+                    <div class="dados-contato">
+                        <label for="isenha">Palavra-passe</label>
+                        <div class="email">
+                            <input type="password" name="senha" id="isenha" placeholder=" digite sua senha:" required
+                                maxlength="20" minlength="8">
+                        </div>
+                    </div>
+                    
+                    <div class="dados-contato" id="phone">
+                        <label for="itelefone">Telefone</label>
+                        <div class="telefone email">
+                            <input type="tel" id="itelefone" name="telefone" placeholder="  +351 000000000"
+                                pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required>
+                        </div>
                     </div>
 
                 </div>
 
-                <div class="dados-contato">
-                    <label for="isenha">Palavra-passe</label>
+            </details>
 
-                    <div class="email">
-                        <input type="password" name="senha" id="isenha" placeholder=" digite sua senha:" required
-                            maxlength="20" minlength="8">
-                    </div>
-
+            <div id="container">
+                <div id="botoes">
+                    <input type="reset" name="cancelar" value="Cancelar" id="btn-cancelar" class="btns">
+                    <input type="submit" name="guardar" value="Guardar" id="btn-guardar" class="btns">
                 </div>
-
-                <div class="dados-contato" id="phone">
-                    <label for="itelefone">Telefone</label>
-
-                    <div class="telefone email">
-                        <input type="tel" id="itelefone" name="telefone" placeholder="  +351 000000000"
-                            pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required>
-                    </div>
-
-                </div>
-
             </div>
-
-        </details>
-
-        <div id="container">
-            <div id="botoes">
-                <input type="reset" name="cancelar" value="Cancelar" id="btn-cancelar" class="btns">
-                <input type="submit" name="guardar" value="Guardar" id="btn-guardar" class="btns">
-            </div>
-        </div>
-
-    </form>
+            
+        </form>
+   
 
 </body>
 

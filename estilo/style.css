@@ -35,7 +35,7 @@ header {
   margin-bottom: 1px;
 }
 
-/* Página Inicial */
+/* Página Index */
 
 body#pg-inicial {
   width: 100vw;
@@ -44,7 +44,7 @@ body#pg-inicial {
 }
 
 h1#pag-inicial {
-  padding: 35px;
+  padding: 25px;
   background-color: var(--cor4);
   color: white;
 }
@@ -55,12 +55,11 @@ div#logo-inicial {
 
 div#logo-inicial > img {
   width: 270px;
-  margin: 130px 0px 150px 0px;
+  margin: 107px 0px 150px 0px;
 }
 
 
-
-/* Página index */
+/* Página inicial */
 
 header > a > img {
   width: 170px;
@@ -77,8 +76,7 @@ header > i#burguer {
 }
 
 header > i#burguer:hover {
-  background-color: var(--cor2);
-  color: aqua;
+  color: gold;
 }
 
 menu {
@@ -117,17 +115,9 @@ p {
   margin-bottom: 10px;
 }
 
-section {
-  
-}
-
 section, iframe {
   height: 75.1vh;
   width: 100%;
-}
-
-iframe {
-  
 }
 
 details {
@@ -196,13 +186,25 @@ input:focus {
 #dados-utilizador {
   width: 100%;
   display: block;
-  align-items: center;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
   background-color: rgba(240, 239, 239, 0.192);
 }
 
-#dados-utilizador > .primeiro {
-  margin-top: 15px;
+#dados-utilizador > .tipo-utilizador > .primeiro {
+  display: flex;
+  align-items: center;
+}
+
+.primeiro {
+  padding: 15px 25px;
+}
+
+.primeiro > input {
+  margin: 0px;
+}
+
+.primeiro > label {
+  margin-left: 15px;
 }
 
 .contato {
@@ -213,7 +215,7 @@ input:focus {
   display: block;
 }
 
-.contato>input {
+.contato > input {
   display: block;
 
 }
