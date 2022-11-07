@@ -303,7 +303,7 @@ a#link-entrar:active {
   font-size: 1.2em;
   font-weight: bolder;
   margin: auto;
-  
+  margin-bottom: 20px;
 }
 
 #btn-guardar:hover {
