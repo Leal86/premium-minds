@@ -29,7 +29,7 @@
          /* md screen Tablet */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    
+
     h1#pag-inicial {
         font-size: 2.2em;
         padding: 30px;
@@ -38,12 +38,12 @@
     header {
         border: 2px solid black;
         height: 8.4vh;
-        text-align: start;
+        text-align: center;
     }
 
     header > a > img {
         width: 220px;
-        padding: 15px;
+        padding: 20px;
     }
 
     header > i#burguer {
@@ -58,21 +58,24 @@
     #itens {
         background-color: var(--cor3);
         display: block;
-        width: 29.9%;;       
-      }
+        width: 29.9%; 
+    }
+
+    menu {
+        height: 83.2%;
+        position: absolute;
+        margin: -6px 0px 0px -2px;
+    }
 
     menu > ul {
         background-color: var(--cor3);
-        display: block;
-        height: 773px;
-        margin-left: -2px;
+        display: block;               
     }
 
     menu > ul > li {
         text-align: left;
         margin-left: 15px;
-        padding: 29.9px 0px 0px 0px;
-
+        padding: 30px 0px 0px 0px;
     }
 
     menu > ul > li > a {
@@ -81,7 +84,7 @@
         position: relative;
         font-size: 1.3em;
         border: none;
-        padding: 5px;
+        padding: 10px;
     }
 
     menu > ul > li > a::after {
@@ -100,39 +103,41 @@
     }
 
     #empresa {
-        margin: 485px 0px 0px 0px;
+        margin: 475px 0px 0px 0px;
+        
     }
 
     #espaco {
         text-align: center;
         display: block;
-        padding: 16px 25px;
-        font-size: 0.9em;
+        margin: 2px 0px 0px 0px;
+        padding: 20px 0px;
+        font-size: 1em;
         background-color: var(--cor4);
-        border: 2px solid var(--cor4);
     }
 
     #espaco:hover {
         color: gold;
     }
 
-    section {
-        margin-bottom: px;
+    section#conteudo {
+        width: 70%;
+        height: 83.1vh;
+        margin: 0% 0% 0% 30%;;
+        
     }
     #section-inicial{
-        border: 1px solid red;
-        height: 83vh;
+        height: 80.9vh;
     }
 
     iframe {
-        width: 70.1%;
-        margin: -0.1% 29.9%;
-        height: 772px;
-        display: inline-block;
+        margin: -0.1% 0% 0% 0%;
+        height: 100%;
+        display: inline-block;       
     }
 
     footer {
-        margin-top: 0px;
+        
     }
 
     footer > p {
