@@ -247,8 +247,8 @@ input:focus {
 
 section#section-inicial {
   display: block;
-  height: 550px;
-  border: 1px solid red;
+  height: 500px;
+  border: 1px solid blue;
 }
 
 #div-entrar {
