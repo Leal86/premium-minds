@@ -55,20 +55,14 @@
         margin: 134px 0px 150px 0px;
     }
 
-    #itens {
-        background-color: var(--cor3);
-        display: block;
-        width: 29.9%; 
-    }
-
-    menu {
-        height: 83.2%;
+    menu#itens {
+        width: 30%;
+        border: 1px solid red;
         position: absolute;
-        margin: -6px 0px 0px -2px;
     }
 
     menu > ul {
-        background-color: var(--cor3);
+        background-color: var(--cor1);
         display: block;               
     }
 
@@ -127,6 +121,7 @@
         
     }
     #section-inicial{
+        display: block;
         height: 80.9vh;
     }
 
@@ -137,7 +132,7 @@
     }
 
     footer {
-        
+        display: block;
     }
 
     footer > p {

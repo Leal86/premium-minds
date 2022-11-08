@@ -29,10 +29,17 @@ body {
 }
 
 header {
+  width: 100%;
+  display: block;
   background-color: white;
   height: auto;
   text-align: center;
   margin-bottom: 1px;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
 }
 
 /* Página Index */
@@ -238,9 +245,15 @@ input:focus {
   display: block;
 }
 
+section#section-inicial {
+  display: block;
+  height: auto;
+}
+
 #div-entrar {
   text-align: center;
-  height: 38.5vh;
+  height: 300px;
+  display: block;
 }
 
 div#div-entrar > a#link-entrar {
