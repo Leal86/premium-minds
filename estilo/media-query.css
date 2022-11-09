@@ -17,7 +17,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*********** Responsividade *************/
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/****************************** Responsividade ******************************/
 
 @media screen and (orientation: portrait) { 
 }
@@ -26,20 +32,44 @@
 }
 
 
-         /* md screen Tablet */
+/****************************** md screen Tablet ******************************/
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
-    h1#pag-inicial {
-        font-size: 2.2em;
-        padding: 30px;
+    html {
+        height: 100vh;
     }
-
+    
     header {
         border: 2px solid black;
-        height: 8.4vh;
         text-align: center;
     }
+
+    main {
+        width: 100vw;
+        height: 81.5vh;
+        background-color: #e4e5e6;
+      }
+
+/****************************** Página Index ******************************/
+
+    h1#pag-inicial {
+        font-size: 2.2em;
+        padding: 25px;
+    }
+
+    section#section-inicial {
+        width: 100vw;
+        display: block;
+    }
+
+    div#logo-inicial > img {
+        width: 400px;
+        margin: 200px 0px 150px 0px;
+    }
+
+    
+/****************************** Página inicial ******************************/    
 
     header > a > img {
         width: 220px;
@@ -50,20 +80,17 @@
        display: none;
     }
 
-    div#logo-inicial > img {
-        width: 400px;
-        margin: 134px 0px 150px 0px;
-    }
-
     menu#itens {
-        width: 30%;
-        border: 1px solid red;
+        width: 24%;
+        min-width: 236px;
         position: absolute;
+        margin: 2px 0px 0px -2px;
     }
 
     menu > ul {
-        background-color: var(--cor1);
-        display: block;               
+        background-color: var(--cor3);
+        display: block;
+        height: 81.5vh;
     }
 
     menu > ul > li {
@@ -97,16 +124,17 @@
     }
 
     #empresa {
-        margin: 475px 0px 0px 0px;
-        
+        margin: 0%;
     }
 
     #espaco {
-        text-align: center;
+        text-align: left;
         display: block;
-        margin: 2px 0px 0px 0px;
-        padding: 20px 0px;
-        font-size: 1em;
+        position: absolute;
+        bottom: 0;
+        min-width: 236px;
+        padding: 20px 20%;
+        font-size: 0.8em;
         background-color: var(--cor4);
     }
 
@@ -115,31 +143,59 @@
     }
 
     section#conteudo {
-        width: 70%;
-        height: 83.1vh;
-        margin: 0% 0% 0% 30%;;
-        
-    }
-    #section-inicial{
-        display: block;
-        height: 80.9vh;
-    }
+        width: 76%;
+        height: 83vh;
+        position: absolute;
+        top: 86px;
+        right: 0;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }  
 
     iframe {
-        margin: -0.1% 0% 0% 0%;
-        height: 100%;
-        display: inline-block;       
+        display: inline-block;
+        background-color: var(--cor1);
     }
+
+/**************************** Página Lorem Ipsum ****************************/
+
+    div.textos {
+        padding-bottom: 20px;
+    }
+
+
+/********************************** Página Marcus Tremer **********************************/
+
+    #m-tremer {
+        display: block;
+        border: 1px solid red;
+        text-align: center;
+    }
+  
+    #m-tremer-img {
+        width: 40vw;
+        border-radius: 25px;
+        box-shadow: 2px 0px 3px 1px rgba(172, 146, 146, 0.322);
+    }
+  
+    #descricao-mtremer {
+        width: 100vw;
+        margin-bottom: 20px;
+    }
+
+/********************************** Rodapé **********************************/
 
     footer {
         display: block;
+        margin: 0px;
+        padding: 8.5px 0px;
     }
 
     footer > p {
         font-size: 1.1em;
-        
     }
 }
+
 
         /* xlg screen Laptop 1024 x 1140 */
 
