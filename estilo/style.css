@@ -169,7 +169,7 @@ section#conteudo{
 /**************************** Página Lorem Ipsum ****************************/
 
 div.textos {
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 
@@ -345,13 +345,18 @@ input:focus {
 
 /********************************** Página Marcus Tremer **********************************/
 
+#marcus {
+  text-align: center;
+}
+
 #m-tremer {
   display: block;
+  text-align: center;
 }
 
 #m-tremer-img {
-  width: 70vw;
-  margin: 0px 0px 25px 55px;
+  width: 50vw;
+  margin: 0px 0px 25px 0px;
   border-radius: 25px;
   box-shadow: 2px 0px 3px 1px rgba(172, 146, 146, 0.322);
 }
