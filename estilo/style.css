@@ -24,6 +24,7 @@ html, body {
   padding: 0px;
   width: 100%;
   height: 91%;
+  background-color: var(--cor1);
 }
 
 body {
@@ -195,7 +196,8 @@ div.textos {
 
 details {
   display: block;
-  width: 100vw;
+  width: 100%;
+ 
 }
 
 details[open] summary::after {
@@ -204,15 +206,15 @@ details[open] summary::after {
 }
 
 summary {
-  display: flex;
   background: rgb(219, 219, 219);
+  display: flex;
   color: rgb(0, 0, 0);
-  padding: 8px;
-  cursor: pointer;
   font-weight: 600;
+  margin: auto 0px 0px auto;
   justify-content: flex-start;
   align-items: center;
-  margin: auto 0px 0px auto;
+  padding: 8px;
+  cursor: pointer;
 }
 
 summary::-webkit-details-marker {
@@ -230,8 +232,9 @@ summary::after {
 }
 
 #dados-utilizador {
-  width: 100%;
   display: block;
+  width: 100%;
+  margin: auto 0px 0px auto;
   padding-bottom: 0px;
   background-color: rgba(240, 239, 239, 0.192);
 }
@@ -254,8 +257,9 @@ summary::after {
 }
 
 .contato {
-  width: 100vw;
+  width: 100%;
   height: auto;
+  margin: auto 0px 0px auto;
   padding-bottom: 5px;
   background: rgba(240, 239, 239, 0.192);
   display: block;

@@ -13,15 +13,21 @@
 /****************************** md screen Tablet ******************************/
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        width: 100%;
+        height: 91.1%;
+    }
     
-    header {
-        border: 1px solid rgb(0, 0, 0);
-        text-align: center;
+    body {
+        
     }
 
-    main {
-        background-color: rgb(223, 223, 223);
-      }
+    div.textos {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        
+    }
 
 /****************************** Página Index ******************************/
 
@@ -30,18 +36,16 @@
         padding: 25px;
     }
 
-    section#section-inicial {
-        width: 100vw;
-        display: block;
-    }
-
     div#logo-inicial > img {
-        width: 400px;
-        margin: 200px 0px 150px 0px;
+        width: 420px;
     }
 
     
-/****************************** Página inicial ******************************/    
+/****************************** Página inicial ******************************/
+
+    body#body-ini {
+        height: 98.2%;
+    }
 
     header > a > img {
         width: 220px;
@@ -55,17 +59,16 @@
     menu#itens {
         position: absolute;
         left: 0;
-        margin: 1px 0px 0px 0px;
-        box-sizing: border-box;
-        width: 26.8vw;
-        height: 83.1vh;
+        width: 27vw;
+        height: 81.8vh;
     }
 
     menu > ul {
+        list-style-type: none;
         background-color: var(--cor3);
         display: inline-block;
         width: 100%;
-        height: 100%;
+        height: 99.8%;
         margin: 0px;       
     }
 
@@ -74,7 +77,6 @@
         margin-left: 15px;
         padding: 30px 0px 0px 0px;
         width: 100%;
-        min-width: 250px;
     }
 
     menu > ul > li > a {
@@ -107,7 +109,7 @@
 
     #espaco {
         position: absolute;
-        bottom: 0;
+        bottom: 1px;
         padding: 20px 15px;
         font-size: 0.8em;
         background-color: var(--cor4);
@@ -116,28 +118,34 @@
 
     #espaco:hover {
         color: gold;
+    }  
+
+    main#pg-ini {
+        width: 73%;
+        height: 91.3%;
+        margin-left: 27%;
     }
 
     section#conteudo {
         width: 73%;
-        height: 100%;
+        height: 91.3%;
         position: absolute;
-        top: 84px;
+        top: 82px;
         right: 0;
-        background-color: var(--cor1);
-    }  
+    }
 
-    iframe {
+    section#conteudo > iframe {
         width: 100%;
         height: 100%;
+        margin: 0px;
     }
 
 /**************************** Página Lorem Ipsum ****************************/
 
-    div.textos {
-        width: 100%;
-        text-align: center;
-    }
+    
+
+
+/**************************** Página Utilizador ****************************/
     
 
 
@@ -158,16 +166,11 @@
         box-shadow: 2px 0px 3px 1px rgba(172, 146, 146, 0.322);
     }
   
-    #descricao-mtremer {
-        width: 100vw;
-        margin-bottom: 20px;
-    }
 
 /********************************** Rodapé **********************************/
 
     footer {
-        display: block;
-        margin: 0px 0px;
+        margin: 0px;
         padding: 10px 0px;
     }
 
@@ -177,21 +180,42 @@
 }
 
 
-        /* xlg screen Laptop 1024 x 1140 */
+        /* xlg screen Laptop 1025 x 1140 */
 
-@media screen and (min-width: 1024.02px) and (max-width:1440px) {
+@media screen and (min-width: 1024px) and (max-width:1440px) {
    
 main {
     margin-top: 1px;
-    background-color: aqua;
     height: 81.5vh;
+}
+
+h1.titulos {
+    margin: 40px;
+   
+}
+
+div.textos {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+div.textos > p {
+    width: 600px;
+    margin: auto;
+    
 }
 
 /****************************** Página Index ******************************/
 
 /****************************** Página Inicial ******************************/
+body#body-ini {
+    height: 100%;
+    width: 100%;
+}
+
 header > a > img {
-    width: 220px;
+    width: 250px;
     padding: 20px;
 }
 
@@ -202,13 +226,12 @@ header > i#burguer {
 menu#itens {
     position: absolute;
     left: 0;
-    margin: 1px 0px 0px 0px;
-    box-sizing: border-box;
-    width: 26.8vw;
-    height: 81.5vh;
+    width: 27vw;
+    height: 81vh;
 }
 
 menu > ul {
+    list-style-type: none;
     background-color: var(--cor3);
     display: inline-block;
     width: 100%;
@@ -221,7 +244,6 @@ menu > ul > li {
     margin-left: 15px;
     padding: 30px 0px 0px 0px;
     width: 100%;
-    min-width: 250px;
 }
 
 menu > ul > li > a {
@@ -263,25 +285,43 @@ menu > ul > li > a:hover::after {
 
 #espaco:hover {
     color: gold;
+}  
+
+main#pg-ini {
+    width: 73%;
+    height: 89.1%;
+    background-color: var(--cor1);
+    margin-top: -1px;
+    margin-left: 27%;
 }
 
 section#conteudo {
-    width: 73.2vw;
-    height: 98.1%;
+    width: 73%;
+    height: 89%;
     position: absolute;
-    top: 83px;
+    top: 88px;
     right: 0;
-    background-color: var(--cor1);
-}  
+    background-color: var(--cor1); 
+}
 
-iframe {
+section#conteudo > iframe {
     width: 100%;
     height: 100%;
+    margin: 0px;
 }
 
 
+
 /************************** Página Quantum Solum **************************/
+
+
+
 /************************** Página Marcus Tremer **************************/
+
+#m-tremer-img {
+    width: 300px;
+  }
+
 /********************************* Rodapé *********************************/
 footer {
     display: block;
