@@ -19,8 +19,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html {
-  box-sizing: border-box;
+html, body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 91%;
 }
 
 body {
@@ -33,61 +36,62 @@ header {
   width: 100%;
   display: block;
   background-color: white;
-  height: auto;
   text-align: center;
 }
 
 main {
-  width: 100vw;
-  background-color: #e6e4e4;
-}
-
-section, iframe {
-  height: 81.6vh;
-  width: 100%;
+  background-color: var(--cor1);
+  
 }
 
 h1 {
-  padding: 25px 0px;
   text-align: center;
+  margin: 20px ;
 }
 
 p {
   font-size: 1.1em;
   text-align: justify;
-  margin: 0px 35px;
   text-indent: 25px;
+  margin: 0px 40px;
+  padding-bottom: 10px;
 }
+
 
 
 /****************************** Página Index ******************************/
 
-body#pg-inicial {
-  width: 100vw;
-}
-
 h1#pag-inicial {
-  padding: 25px;
+  padding: 20px;
+  width: 100%;
   background-color: var(--cor4);
   color: white;
 }
 
+main#pg-login {
+  height: 100%;
+}
+
 section#section-inicial {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 div#logo-inicial {
   text-align: center;
+  
 }
 
 div#logo-inicial > img {
   width: 270px;
-  margin: 80px 0px 140px 0px;
+  margin-top: 150px;
 }
 
 #div-entrar {
   text-align: center;
-  display: block;
+  width: 100%;
+  margin-top: 150px;
 }
 
 div#div-entrar > a#link-entrar {
@@ -119,8 +123,9 @@ a#link-entrar:active {
 /****************************** Página inicial ******************************/
 
 header > a > img {
-  width: 170px;
-  padding: 15px;
+  width: 200px;
+  padding: 20px;
+  color: white;
 }
 
 header > i#burguer {
@@ -161,15 +166,24 @@ menu > ul > li > a:hover {
   color: gold;
 }
 
-section#conteudo{
-  height: 81.5vh;
+main#pg-ini {
+  height: 91.5%;
 }
 
+section#conteudo {
+  width: 100%;
+  height: 100%;
+}
+
+section#conteudo > iframe {
+  width: 100%;
+  height: 100%;
+}
 
 /**************************** Página Lorem Ipsum ****************************/
 
 div.textos {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 
@@ -352,11 +366,12 @@ input:focus {
 #m-tremer {
   display: block;
   text-align: center;
+  margin: 0px 0px 25px 0px;
+  border: 1px solid red;
 }
 
 #m-tremer-img {
-  width: 50vw;
-  margin: 0px 0px 25px 0px;
+  width: 60vw;
   border-radius: 25px;
   box-shadow: 2px 0px 3px 1px rgba(172, 146, 146, 0.322);
 }

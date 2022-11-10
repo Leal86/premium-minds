@@ -1,34 +1,5 @@
 @charset "UTF-8";
 
-:root {
-    --cor0: #FFFFFF;
-    --cor1: #EBEBEB;
-    --cor2: #425064;
-    --cor3: #334053;
-    --cor4: #223046;
-
-    --fonte-padrao: arial, verdana, helvetica, sans-serif;
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-html, body, main {
-    margin: 0px;
-    padding: 0px;
-    width: 100vw;
-    height: 83.1vh;
-}
-
-p {
-    margin: 0px 60px;
-    padding-bottom: 10px;
-}
-
 
 /****************************** Responsividade ******************************/
 
@@ -210,12 +181,118 @@ p {
 
 @media screen and (min-width: 1024.02px) and (max-width:1440px) {
    
+main {
+    margin-top: 1px;
+    background-color: aqua;
+    height: 81.5vh;
+}
 
-    /****************************** Página Index ******************************/
-    /****************************** Página Inicial ******************************/
-    /************************** Página Quantum Solum **************************/
-    /************************** Página Marcus Tremer **************************/
-    /********************************* Rodapé *********************************/
+/****************************** Página Index ******************************/
+
+/****************************** Página Inicial ******************************/
+header > a > img {
+    width: 220px;
+    padding: 20px;
+}
+
+header > i#burguer {
+   display: none;
+}
+
+menu#itens {
+    position: absolute;
+    left: 0;
+    margin: 1px 0px 0px 0px;
+    box-sizing: border-box;
+    width: 26.8vw;
+    height: 81.5vh;
+}
+
+menu > ul {
+    background-color: var(--cor3);
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0px;       
+}
+
+menu > ul > li {
+    text-align: left;
+    margin-left: 15px;
+    padding: 30px 0px 0px 0px;
+    width: 100%;
+    min-width: 250px;
+}
+
+menu > ul > li > a {
+    display: inline;
+    background-color: var(--cor3);
+    position: relative;
+    font-size: 1.3em;
+    border: none;
+    padding: 10px;
+}
+
+menu > ul > li > a::after {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: gold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+menu > ul > li > a:hover::after {
+    width: 100%;
+}
+
+#empresa {
+    margin: 0%;       
+}
+
+#espaco {
+    position: absolute;
+    bottom: 0;
+    padding: 20px 15px;
+    font-size: 0.8em;
+    background-color: var(--cor4);
+    width: 100%;        
+}
+
+#espaco:hover {
+    color: gold;
+}
+
+section#conteudo {
+    width: 73.2vw;
+    height: 98.1%;
+    position: absolute;
+    top: 83px;
+    right: 0;
+    background-color: var(--cor1);
+}  
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+/************************** Página Quantum Solum **************************/
+/************************** Página Marcus Tremer **************************/
+/********************************* Rodapé *********************************/
+footer {
+    display: block;
+    margin: 0px 0px;
+    padding: 10px 0px;
+}
+
+footer > p {
+    font-size: 1.1em;
+}
+
 }
 
 
