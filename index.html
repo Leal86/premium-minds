@@ -10,7 +10,7 @@
     <title>Página Inicial</title>
 </head>
 
-<body id="pg-inicial">
+<body onresize="mudouTamanho()" id="pg-inicial">
     <h1 id="pag-inicial">Bem-vindo</h1>
     
     <main id="pg-login">
@@ -30,6 +30,24 @@
             para fins acadêmicos
         </p>
     </footer>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none';
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -10,7 +10,7 @@
     <title>Marcus Tremer</title>
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <h1 class="titulos">Alexsander Leal</h1>
 
         <div id="m-tremer">
@@ -40,6 +40,24 @@
             </p>
             
         </div>
+
+        <script>
+            function clickMenu() {
+                if (itens.style.display == 'block') {
+                    itens.style.display = 'none';
+                } else {
+                    itens.style.display = 'block'
+                }
+            }
+    
+            function mudouTamanho() {
+                if (window.innerWidth >= 768) {
+                    itens.style.display = 'block'
+                } else {
+                    itens.style.display = 'none'
+                }
+            }
+        </script>
 </body>
 
 </html>

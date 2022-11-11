@@ -10,7 +10,7 @@
     <title>Lorem Ipsum</title>
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <h1 class="titulos">Lorem Ipsum</h1>
     
     <div class="textos">
@@ -35,6 +35,24 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dignissimos neque doloremque dolorem, minima pariatur necessitatibus nihil quibusdam quisquam commodi quod officiis incidunt amet dolores animi odit quo. Dolor, minus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit tempora est fugit! Nisi sit, accusamus, deserunt amet natus enim reiciendis quaerat nobis minima mollitia cum, doloribus similique! Inventore, minima blanditiis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate nihil ad necessitatibus delectus obcaecati eius minima perspiciatis eum nesciunt sapiente. Officia, ea libero consequuntur quo impedit officiis cumque unde quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum praesentium, officia magnam sequi culpa sunt quaerat incidunt pariatur, expedita ipsam excepturi eveniet impedit tenetur, veritatis mollitia quos deleniti saepe?
         </p>
     </div>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none';
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
 
 </body>
 

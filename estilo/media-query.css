@@ -1,35 +1,27 @@
 @charset "UTF-8";
 
 
-/****************************** Responsividade ******************************/
 
-@media screen and (orientation: portrait) { 
-}
-
-@media screen and (orientation: landscape) {
-}
-
-
-/****************************** md screen Tablet ******************************/
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
     html {
         width: 100%;
-        height: 91.1%;
+        height: 100%;
+        border: 1px solid rgba(255, 230, 0, 0);
     }
     
     body {
-        
+        background-color: var(--cor1);
+        width: 100%;
+        height: 81.9%;   
     }
 
     div.textos {
-        width: 90%;
+        width: 80%;
         margin: auto;
         text-align: center;
-        
     }
 
-/****************************** Página Index ******************************/
+    /****************************** Página Index ******************************/
 
     h1#pag-inicial {
         font-size: 2.2em;
@@ -41,10 +33,10 @@
     }
 
     
-/****************************** Página inicial ******************************/
+    /****************************** Página inicial ******************************/
 
     body#body-ini {
-        height: 98.2%;
+        height: 100%;
     }
 
     header > a > img {
@@ -56,11 +48,16 @@
        display: none;
     }
 
+    menu {
+        width: 100%;
+        display: block;
+    }
+
     menu#itens {
         position: absolute;
         left: 0;
         width: 27vw;
-        height: 81.8vh;
+        height: 82.2vh;
     }
 
     menu > ul {
@@ -122,56 +119,39 @@
 
     main#pg-ini {
         width: 73%;
-        height: 91.3%;
-        margin-left: 27%;
+        height: 82.3%;
+        margin-left: 27.1%;
     }
 
     section#conteudo {
-        width: 73%;
-        height: 91.3%;
+        width: 72.6%;
+        height: 82%;
         position: absolute;
-        top: 82px;
-        right: 0;
+        top: 84px;
+        right: 1px;
     }
 
     section#conteudo > iframe {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
+        width: 99.7%;
+        height: 99.7%;
+        margin: 1px;
     }
 
-/**************************** Página Lorem Ipsum ****************************/
+    /**************************** Página Lorem Ipsum ****************************/ 
 
+
+    /**************************** Página Utilizador ****************************/
     
 
-
-/**************************** Página Utilizador ****************************/
-    
+    /********************************** Página Marcus Tremer **********************************/
 
 
-/********************************** Página Marcus Tremer **********************************/
-
-    #marcus {
-        text-align: center;
-    }
-
-    #m-tremer {
-        display: block;
-        text-align: center;
-    }
-  
-    #m-tremer-img {
-        width: 50vw;
-        border-radius: 25px;
-        box-shadow: 2px 0px 3px 1px rgba(172, 146, 146, 0.322);
-    }
-  
-
-/********************************** Rodapé **********************************/
+    /********************************** Rodapé **********************************/
 
     footer {
         margin: 0px;
         padding: 10px 0px;
+        width: 100%;
     }
 
     footer > p {
@@ -180,172 +160,479 @@
 }
 
 
-        /* xlg screen Laptop 1025 x 1140 */
-
-@media screen and (min-width: 1024px) and (max-width:1440px) {
-   
-main {
-    margin-top: 1px;
-    height: 81.5vh;
-}
-
-h1.titulos {
-    margin: 40px;
-   
-}
-
-div.textos {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
-
-div.textos > p {
-    width: 600px;
-    margin: auto;
+@media only screen and (min-width: 1024px) {
+    html {
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgba(255, 1, 1, 0);
+    }
     
+    body {
+        background-color: var(--cor1);
+        width: 100%;
+        height: 81.9%;   
+    }
+
+    div.textos {
+        width: 75%;
+        margin: auto;
+        text-align: center;
+    }
+
+    /****************************** Página Index ******************************/
+
+    h1#pag-inicial {
+        font-size: 2.2em;
+        padding: 25px;
+    }
+
+    div#logo-inicial > img {
+        width: 420px;
+    }
+
+    
+    /****************************** Página inicial ******************************/
+
+    body#body-ini {
+        height: 100%;
+    }
+
+    header > a > img {
+        width: 220px;
+        padding: 20px;
+    }
+
+    header > i#burguer {
+       display: none;
+    }
+
+    menu {
+        width: 100%;
+        display: block;
+    }
+
+    menu#itens {
+        position: absolute;
+        left: 0;
+        width: 27vw;
+        height: 82.2vh;
+    }
+
+    menu > ul {
+        list-style-type: none;
+        background-color: var(--cor3);
+        display: inline-block;
+        width: 100%;
+        height: 99.8%;
+        margin: 0px;       
+    }
+
+    menu > ul > li {
+        text-align: left;
+        margin-left: 15px;
+        padding: 30px 0px 0px 0px;
+        width: 100%;
+    }
+
+    menu > ul > li > a {
+        display: inline;
+        background-color: var(--cor3);
+        position: relative;
+        font-size: 1.3em;
+        border: none;
+        padding: 10px;
+    }
+
+    menu > ul > li > a::after {
+        content: " ";
+        width: 0%;
+        height: 3px;
+        background-color: gold;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    menu > ul > li > a:hover::after {
+        width: 100%;
+    }
+
+    #empresa {
+        margin: 0%;       
+    }
+
+    #espaco {
+        position: absolute;
+        bottom: 1px;
+        padding: 20px 15px;
+        font-size: 0.8em;
+        background-color: var(--cor4);
+        width: 100%;        
+    }
+
+    #espaco:hover {
+        color: gold;
+    }  
+
+    main#pg-ini {
+        width: 73%;
+        height: 82.3%;
+        margin-left: 27.1%;
+    }
+
+    section#conteudo {
+        width: 72.6%;
+        height: 82%;
+        position: absolute;
+        top: 84px;
+        right: 1px;
+    }
+
+    section#conteudo > iframe {
+        width: 99.7%;
+        height: 99.7%;
+        margin: 1px;
+    }
+
+    /**************************** Página Lorem Ipsum ****************************/
+
+    
+
+
+    /**************************** Página Utilizador ****************************/
+    
+
+
+    /********************************** Página Marcus Tremer **********************************/
+
+    #m-tremer-img {
+        width: 350px;
+        border-radius: 25px;
+        box-shadow: 2px 0px 3px 1px rgba(172, 146, 146, 0.322);
+      }
+
+    /********************************** Rodapé **********************************/
+
+    footer {
+        margin: 0px;
+        padding: 10px 0px;
+        width: 100%;
+    }
+
+    footer > p {
+        font-size: 1.1em;
+    }
 }
 
-/****************************** Página Index ******************************/
 
-/****************************** Página Inicial ******************************/
-body#body-ini {
-    height: 100%;
-    width: 100%;
+@media only screen and (min-width: 1440px) {
+   
+    html {
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgba(0, 17, 248, 0);
+    }
+    
+    body {
+        background-color: var(--cor1);
+        width: 100%;
+        height: 82%;
+    }
+
+    div.textos {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+
+    /****************************** Página Index ******************************/
+
+    h1#pag-inicial {
+        font-size: 2.3em;
+        padding: 25px;
+    }
+
+    div#logo-inicial > img {
+        width: 410px;
+    }
+
+    /****************************** Página Inicial ******************************/
+
+    body#body-ini {
+        height: 100%;
+    }
+
+    header > i#burguer {
+        display: none;
+    }
+
+
+    menu {
+        width: 100%;
+        display: block;
+    }
+
+    menu#itens {
+        position: absolute;
+        left: 0;
+        width: 27vw;
+        height: 82.3vh;
+    }
+
+    menu > ul {
+        list-style-type: none;
+        background-color: var(--cor3);
+        display: inline-block;
+        width: 100%;
+        height: 99.8%;
+        margin: 0px;   
+    }
+
+    menu > ul > li {
+        text-align: left;
+        margin-left: 15px;
+        padding: 30px 0px 0px 0px;
+        width: 100%;
+    }
+
+    menu > ul > li > a {
+        display: inline;
+        background-color: var(--cor3);
+        position: relative;
+        font-size: 1.3em;
+        border: none;
+        padding: 10px;
+    }
+
+    menu > ul > li > a::after {
+        content: " ";
+        width: 0%;
+        height: 3px;
+        background-color: gold;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    menu > ul > li > a:hover::after {
+        width: 100%;
+    }
+
+    #empresa {
+        margin: 0%;       
+    }
+
+    #espaco {
+        position: absolute;
+        bottom: 1px;
+        padding: 20px 15px;
+        font-size: 0.8em;
+        background-color: var(--cor4);
+        width: 100%;        
+    }
+
+    #espaco:hover {
+        color: gold;
+    }  
+
+    main#pg-ini {
+        width: 72.8%;
+        height: 82.4%;
+        margin-left: 27.1%;
+    }
+
+    section#conteudo {
+        width: 72.4%;
+        height: 81.8%;
+        margin: 0px;
+        position: absolute;
+        top: 85px;
+        right: 4px;
+    }
+
+    section#conteudo > iframe {
+        width: 99.5%;
+        height: 99.5%;
+        margin: 2px;
+    }
+
+    /************************** Página Quantum Solum **************************/
+
+    /************************** Página Marcus Tremer **************************/
+
+    /********************************* Rodapé *********************************/
+
+    footer {
+        margin: 0px;
+        padding: 8px 0px;
+        width: 100%;
+    }
+
+    footer > p {
+        font-size: 1.2em;
+    }
+
 }
 
-header > a > img {
-    width: 250px;
-    padding: 20px;
+
+@media only screen and (min-width: 1600px) {
+    html {
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgba(255, 0, 191, 0);
+    }
+    
+    body {
+        background-color: var(--cor1);
+        width: 100%;
+        height: 81.8%;
+    }
+
+    div.textos {
+        width: 65%;
+        margin: auto;
+        text-align: center;
+    }
+
+    /****************************** Página Index ******************************/
+
+    h1#pag-inicial {
+        font-size: 2.3em;
+        padding: 25px;
+    }
+
+    div#logo-inicial > img {
+        width: 410px;
+    }
+
+     /****************************** Página Inicial ******************************/
+
+     body#body-ini {
+        height: 100%;
+    }
+
+    header > i#burguer {
+        display: none;
+    }
+
+
+    menu {
+        width: 100%;
+        display: block;
+    }
+
+    menu#itens {
+        position: absolute;
+        left: 0;
+        width: 27vw;
+        height: 82.3vh;
+    }
+
+    menu > ul {
+        list-style-type: none;
+        background-color: var(--cor3);
+        display: inline-block;
+        width: 100%;
+        height: 99.8%;
+        margin: 0px;   
+    }
+
+    menu > ul > li {
+        text-align: left;
+        margin-left: 15px;
+        padding: 30px 0px 0px 0px;
+        width: 100%;
+    }
+
+    menu > ul > li > a {
+        display: inline;
+        background-color: var(--cor3);
+        position: relative;
+        font-size: 1.3em;
+        border: none;
+        padding: 10px;
+    }
+
+    menu > ul > li > a::after {
+        content: " ";
+        width: 0%;
+        height: 3px;
+        background-color: gold;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    menu > ul > li > a:hover::after {
+        width: 100%;
+    }
+
+    #empresa {
+        margin: 0%;       
+    }
+
+    #espaco {
+        position: absolute;
+        bottom: 1px;
+        padding: 20px 15px;
+        font-size: 0.8em;
+        background-color: var(--cor4);
+        width: 100%;        
+    }
+
+    #espaco:hover {
+        color: gold;
+    }  
+
+    main#pg-ini {
+        width: 72.8%;
+        height: 82.4%;
+        margin-left: 27.1%;
+    }
+
+    section#conteudo {
+        width: 72.4%;
+        height: 81.8%;
+        margin: 0px;
+        position: absolute;
+        top: 85px;
+        right: 5px;
+    }
+
+    section#conteudo > iframe {
+        width: 99.8%;
+        height: 99.7%;
+        margin: 1px;
+    }
+
+    /************************** Página Quantum Solum **************************/
+
+    /************************** Página Marcus Tremer **************************/
+
+    /********************************* Rodapé *********************************/
+
+    footer {
+        margin: 0px;
+        padding: 8px 0px;
+        width: 100%;
+    }
+
+    footer > p {
+        font-size: 1.2em;
+    }
+
 }
-
-header > i#burguer {
-   display: none;
-}
-
-menu#itens {
-    position: absolute;
-    left: 0;
-    width: 27vw;
-    height: 81vh;
-}
-
-menu > ul {
-    list-style-type: none;
-    background-color: var(--cor3);
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    margin: 0px;       
-}
-
-menu > ul > li {
-    text-align: left;
-    margin-left: 15px;
-    padding: 30px 0px 0px 0px;
-    width: 100%;
-}
-
-menu > ul > li > a {
-    display: inline;
-    background-color: var(--cor3);
-    position: relative;
-    font-size: 1.3em;
-    border: none;
-    padding: 10px;
-}
-
-menu > ul > li > a::after {
-    content: " ";
-    width: 0%;
-    height: 3px;
-    background-color: gold;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 0.3s ease-in-out;
-}
-
-menu > ul > li > a:hover::after {
-    width: 100%;
-}
-
-#empresa {
-    margin: 0%;       
-}
-
-#espaco {
-    position: absolute;
-    bottom: 0;
-    padding: 20px 15px;
-    font-size: 0.8em;
-    background-color: var(--cor4);
-    width: 100%;        
-}
-
-#espaco:hover {
-    color: gold;
-}  
-
-main#pg-ini {
-    width: 73%;
-    height: 89.1%;
-    background-color: var(--cor1);
-    margin-top: -1px;
-    margin-left: 27%;
-}
-
-section#conteudo {
-    width: 73%;
-    height: 89%;
-    position: absolute;
-    top: 88px;
-    right: 0;
-    background-color: var(--cor1); 
-}
-
-section#conteudo > iframe {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-}
-
-
-
-/************************** Página Quantum Solum **************************/
-
-
-
-/************************** Página Marcus Tremer **************************/
-
-#m-tremer-img {
-    width: 300px;
-  }
-
-/********************************* Rodapé *********************************/
-footer {
-    display: block;
-    margin: 0px 0px;
-    padding: 10px 0px;
-}
-
-footer > p {
-    font-size: 1.1em;
-}
-
-}
-
-
-/* xxlg screen */
-@media screen and (min-width: 1600px) {}
 
 /* Mudança de background para abrir a tab content
 
-$screen-xs   = 520px  // Extra small screen / phone
-$screen-sm   = 768px  // Small screen / tablet
-$screen-md   = 992px  // Medium screen / desktop
-$screen-lg     = 1200px // Large screen / wide desktop
-$screen-xlg    = 1400px // Extra Large screen / wide desktop
-$screen-xxlg   = 1600px // Extra Large screen / wide desktop
+$screen-xs      = 520px  // Extra small screen / phone
+$screen-sm      = 768px  // Small screen / tablet
+$screen-md      = 992px  // Medium screen / desktop
+$screen-lg      = 1200px // Large screen / wide desktop
+$screen-xlg     = 1400px // Extra Large screen / wide desktop
+$screen-xxlg    = 1600px // Extra Large screen / wide desktop
 
 */
