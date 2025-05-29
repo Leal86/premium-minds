@@ -45,7 +45,7 @@ premium-minds-webdev-practice/
 
 1. Clone este repositório:
    ```sh
-   git clone https://github.com/seu-usuario/premiumminds-webdev-practice.git
+   git clone https://github.com/Leal86/premiumminds-webdev-practice.git
    ```
 2. Abra o arquivo `index.html` ou `pag-inicial.html` em seu navegador.
 
